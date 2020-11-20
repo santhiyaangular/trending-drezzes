@@ -1,0 +1,35 @@
+div.container {
+  width: 100%;
+
+  border: none;
+  margin: auto;
+}
+
+header{
+  padding: 1em;
+  color: white;
+  background-color: #4C787E;
+  clear: left;
+  text-align: center;
+}
+
+footer{
+  padding: 1em;
+  color: white;
+  background-color: #4C787E;
+  clear: left;
+  text-align: center;
+  position: fixed;
+  width: 97%;
+  bottom: 0;
+}
+
+router-outlet{
+  height: 100%;
+}
+h6{
+  text-align: end;
+  float: right;
+}
+
+

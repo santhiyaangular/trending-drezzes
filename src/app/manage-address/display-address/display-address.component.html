@@ -1,0 +1,23 @@
+<div>
+    <p>{{address.firstName}} {{address.lastName}}, {{address.addressType}}, {{address.state}}, {{address.city}} {{address.zipcode}} </p>
+    
+    <button (click)="onSelect()">Edit</button>
+    <div *ngIf="!isEdited">
+        <label for="fname">First name:</label><br>
+        <input type="text" [value]="address.firstName" (keyup)="updateField($event, 'firstName')"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" [(ngModel)]="address.lastName"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" [(ngModel)]="address.addressType"><br>
+        <label for="state">State:</label><br>
+        <input type="text" [(ngModel)]="address.state"><br>
+        <label for="city">City:</label><br>
+        <input type="text" [(ngModel)]="address.city"><br>
+        <label for="zip">Zipcode:</label><br>
+        <input type="number" [(ngModel)]="address.zipcode"><br>
+        <button (click)="updateAddress()">Save</button>
+
+    </div>
+    <button>Delete</button>
+
+</div>

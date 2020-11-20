@@ -1,0 +1,8 @@
+<div class="menu" *ngFor = "let card of cardList">
+    <h3>Card Type: {{card.cardType}}</h3>
+    <h3>Name on Card: {{card.nameOnCard}}</h3>
+    <h3>Card Number: {{card.cardNumber}}</h3>
+    <h3>Expiration Date: {{card.expDate}}</h3>
+    <br>
+    <button (click)="onEditClick(card)">Edit</button>
+</div>

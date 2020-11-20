@@ -1,0 +1,32 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 16.66%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h4 {
+      font-size: 150%;
+  }
+  input:in-range {
+    border: 2px solid yellow;
+  }
+  select {
+    background-color: lawngreen;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  

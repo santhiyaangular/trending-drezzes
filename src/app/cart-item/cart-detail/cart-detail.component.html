@@ -1,0 +1,16 @@
+<div class="grid-container" *ngFor="let cartItem of cartItems">
+    <div class="item1">
+        <img src="{{ cartItem.image }}">
+    </div>
+    <div class="item2">
+        {{ cartItem.item }}
+    </div>
+    <div class="item3">
+        Qty - {{ cartItem.quantity }}
+     </div> 
+     <div class="item4">
+        $ {{ cartItem.price }}
+     </div> 
+     <button (click)="onEdit()">Edit</button>
+</div>
+<button>Purchase Now</button>

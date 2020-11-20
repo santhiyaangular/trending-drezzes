@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="container">
+        <h1>Secure Payment</h1>
+    </div>
+</div>
+<div class="row">
+    <h3>Billing Address</h3>
+    <label for="fname">First Name</label>
+    <input type="text"  name="firstname" [(ngModel)]="billingAddress.firstName">
+</div>
+<div class="row">
+    <label for="lname" name="lastname">Last Name</label>
+    <input type="text" [(ngModel)]="billingAddress.lastName">
+</div>
+<div class="row">
+    <label for="email" name="email">Email</label>
+    <input type="text" [(ngModel)]="billingAddress.email">
+</div>
+<div class="row">
+    <label for="contact" name="contact">Contact</label>
+    <input type="text" [(ngModel)]="billingAddress.contact">
+</div>
+<div class="row">
+    <label for="address" name="address" [(ngModel)]="billingAddress.addressType">Address</label>
+    <input type="text" [(ngModel)]="billingAddress.addressType">
+</div>
+<div class="row">
+    <label for="city" name="city">City</label>
+    <input type="text" [(ngModel)]="billingAddress.city">
+</div>
+<div class="row">
+    <label for="state" name="state">State</label>
+    <input type="text" [(ngModel)]="billingAddress.state">
+</div>
+<div class="row">
+    <button (click)="onPaymentSaveClick()">Save</button>
+</div>
+<hr>
